@@ -1,0 +1,26 @@
+dev:
+  base_url: BASE_URL
+  auth:
+    type: jwt
+    token_url: /api/token/
+    username_env: USERNAME
+    password_env: PASSWORD
+
+qa:
+  base_url: https://qa.api.company.com
+  auth:
+    type: bearer
+    token_env: QA_AUTH_TOKEN
+
+prod:
+  base_url: https://api.company.com
+  auth:
+    type: bearer
+    token_env: PROD_AUTH_TOKEN
+
+petstore:
+  base_url: https://petstore.swagger.io/v2
+  auth:
+    type: api_key
+    header_name: api_key
+    token_env: API_KEY
